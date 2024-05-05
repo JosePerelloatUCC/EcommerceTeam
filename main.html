@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<title>Project</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="about.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 200px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.card-link {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.home-image {
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title-text {
+  position: absolute;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  color:azure;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.subtitle-text {
+  position: absolute;
+  text-align: center;
+  color: azure;
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.navbar {
+  z-index: 2;
+}
+
+.home-image .btn {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+</style>
+</head>
+<body>
+
+<!--Navigation bar-->
+<div id="nav-placeholder">
+
+</div>
+
+<script>
+$(function(){
+  $("#nav-placeholder").load("nav.html");
+});
+</script>
+<!--end of Navigation bar-->
+
+<!-- Image Header -->
+<header class="home-image w3-display-container w3-animate-opacity w3-center">
+  <h1 class="title-text w3-margin w3-jumbo">Authentic Sporting Supply</h1>
+  <p class="subtitle-text w3-xlarge">(insert cool slogan here)</p>
+  <img src="images/playing-soccer.png" alt="People playing soccer" style="width:100%;min-height:350px;max-height:800px;filter: blur(4px);">
+  <a href="#shop">
+  <button class="btn w3-button w3-teal w3-padding-large w3-large w3-margin-top">Shop Now</button></a>
+</header>
+  
+<!-- Main content: -->
+<div class="w3-main">
+
+  <div class="w3-row">
+    <div class="w3-container w3-padding-64" id="shop" style="margin-left: 20%;margin-right: 20%">
+      <h1 class="w3-text-teal">Shop</h1>
+      <p>Select a sport:</p>
+      <div class="w3-third">
+      <div class="card">
+        <a href="soccer.html" class='card-link'>
+          <img src="images/icon-soccer.png" alt="Soccer icon" style="width:100%">
+          <h>Soccer</h>
+        </a>
+      </div>
+    </div>
+    <div class="w3-third">
+      <div class="card">
+        <a href="football.html" class='card-link'>
+          <img src="images/football-icon.png" alt="football icon" style="width:100%">
+          <h>Football</h>
+        </a>
+      </div>
+    </div>
+    <div class="w3-third">
+      <div class="card">
+        <a href="football.html" class='card-link'>
+          <img src="images/baseball-icon.webp" alt="football icon" style="width:100%">
+          <h>Baseball</h>
+        </a>
+      </div>
+    </div>
+</div>
+
+<div class="w3-row w3-light-grey w3-padding-64" id="about">
+  <div class="w3-content">
+    <div class="w3-container">
+      <div class="container">
+        <h1>About Us</h1>
+        <p>Welcome to our website! We are a team of passionate individuals dedicated to providing quality products/services to our customers. Our mission is to <strong>exceed customer expectations</strong> and <strong>innovate</strong> in everything we do.</p>
+       
+        <h2>Our Team</h2>
+        <ul class="team-members">
+            <li><i class="fas fa-user"></i>Eduardo Perez - CEO</li>
+            <li><i class="fas fa-user"></i>Jose- Sales Manager </li>
+            <li><i class="fas fa-user"></i>Rey -  Designer</li>
+        </ul>
+       
+        <div class="history">
+            <h2>Our History</h2>
+            <p>Our company was founded in <strong>2024</strong> with the goal of <strong>having some good quality goods</strong>. Since then, we have grown into a successful business, serving customers all over the world.</p>
+        </div>
+       
+        <div class="contact-info">
+            <h2>Contact Us</h2>
+            <ul>
+                <li><i class="fas fa-envelope"></i>Email: info@example.com</li>
+                <li><i class="fas fa-phone"></i>Phone: 123-456-7890</li>
+                <li><i class="fas fa-map-marker-alt"></i>Address: 123 Main St, City, Country</li>
+            </ul>
+        </div>
+    </div>
+    </div>
+    </div>
+  </div>
+
+
+  <div class="w3-row w3-padding-64" id="news">
+    <div class="w3-content">
+      <div class="w3-container w3-twothird">
+        <h1 class="w3-text-teal">News</h1>
+        <p>Wesbite Launched! (Yay!)</p>
+      </div>
+      <div class="w3-third w3-center">
+        <img src="images/news.jpg" style="width:100%">
+      </div>
+    </div>
+  </div>
+
+  <footer id="contact">
+    <div class="w3-container w3-theme-l2 w3-padding-32">
+    </div>
+  </footer>
+
+<!-- END MAIN -->
+</div>
+
+
+</body>
+</html>
