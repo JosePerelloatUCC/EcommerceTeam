@@ -59,7 +59,7 @@ function priceCheck() {
 
         message += products.title +"\n";
       }
-    }); alert("Products within range:\n" + message);
+    });
   }
 
 const btns=[
@@ -262,12 +262,12 @@ const btns2=[
             document.getElementById("total").innerHTML = "$ "+total+".00";
             return(
                 `<div class='cart-item'>
-                <div class='row-img'>
-                    <img class='rowimg' src=${image}>
-                </div>
-                <p style='font-size:12px;'>${title}</p>
-                <h2 style='font-size: 15px;'>$ ${price}.00</h2>`+
-                "<i class='fa-solid fa-trash' onclick='delElement("+ (j++) +")'></i></div>"
+                    <div class='row-img'>
+                      <img class='rowimg' src=${image}>
+                    </div>
+                    <p style='font-size:12px;'>${title}</p>
+                    <h2 style='font-size: 15px;'>$ ${price}.00</h2>`+
+                  "<i class='fa-solid fa-trash' onclick='delElement("+ (j++) +")'></i></div>"
             );
         }).join('');
     }
